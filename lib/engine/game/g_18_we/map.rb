@@ -94,6 +94,34 @@ module Engine
                 'code' => 'city=revenue:80,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=★',
               },
 
+# Grey regular cities
+          'eC' =>
+              {
+              'count' => 'unlimited',
+              'color' => 'gray',
+              'code' => 'city=revenue:50,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0',
+            },
+# Grey regular villages
+          'eV' =>
+              {
+              'count' => 'unlimited',
+              'color' => 'gray',
+              'code' => 'town=revenue:30,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0',
+            },
+# Grey Y city
+          'eY' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'gray',
+                'code' => 'city=revenue:60,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=Y',
+              },
+# Grey ★ city
+          'e★' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'gray',
+                'code' => 'city=revenue:100,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=★',
+              },
 
 
 
