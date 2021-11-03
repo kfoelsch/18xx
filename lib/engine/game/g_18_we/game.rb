@@ -155,7 +155,7 @@ module Engine
             train_limit: 3, # per type
             tiles: [:yellow],
             operating_rounds: 1,
-            status: %w[three_per first_rev],
+            status: %w[two_per first_rev],
           },
           {
             name: 'B',
@@ -163,7 +163,7 @@ module Engine
             train_limit: 3, # 3 type
             tiles: %i[yellow green],
             operating_rounds: 2,
-            status: %w[three_per first_rev],
+            status: %w[two_per first_rev],
           },
           {
             name: 'C',
@@ -171,7 +171,7 @@ module Engine
             train_limit: 3, # per type
             tiles: %i[yellow green],
             operating_rounds: 2,
-            status: %w[three_per middle_rev],
+            status: %w[two_per first_rev],
           },
           {
             name: 'D',
@@ -179,7 +179,7 @@ module Engine
             train_limit: 3, # per type
             tiles: %i[yellow green brown],
             operating_rounds: 3,
-            status: %w[three_per middle_rev],
+            status: %w[two_per second_rev],
           },
           {
             name: 'E',
@@ -187,7 +187,7 @@ module Engine
             train_limit: 2, # per type
             tiles: %i[yellow green brown],
             operating_rounds: 3,
-            status: %w[two_per last_rev],
+            status: %w[two_per third_rev],
           },
           {
             name: 'F',
@@ -195,7 +195,7 @@ module Engine
             train_limit: 2, # per type
             tiles: %i[yellow green brown],
             operating_rounds: 3,
-            status: %w[two_per last_rev],
+            status: %w[two_per third_rev],
           },
           {
             name: 'G',
@@ -203,7 +203,7 @@ module Engine
             train_limit: 3, # across all types
             tiles: %i[yellow green brown],
             operating_rounds: 3,
-            status: %w[three_total last_rev],
+            status: %w[two_per last_rev],
           },
           {
             name: 'H',
@@ -211,7 +211,7 @@ module Engine
             train_limit: 3, # across all types
             tiles: %i[yellow green brown],
             operating_rounds: 3,
-            status: %w[three_total last_rev],
+            status: %w[two_per last_rev],
           },
         ].freeze
 
@@ -478,13 +478,17 @@ module Engine
 
         STATUS_TEXT = Base::STATUS_TEXT.merge(
           'three_per' => ['3 per kind',
-                          'Limit of 3 trains of each kind (Freight/Local/Express)'],
+                          'Limit of 3 trains of each kind (Freight/Regional/Express)'],
           'two_per' => ['2 per kind',
-                        'Limit of 2 trains of each kind (Freight/Local/Express)'],
+                        'Limit of 2 trains of each kind (Freight/Regional/Express)'],
           'three_total' => ['3 total',
                             'Limit of 3 trains total'],
           'first_rev' => ['First offboard',
                           'First offboard/port value used for revenue'],
+          'second_rev' => ['Second offboard',
+                          'Second offboard/port value used for revenue'],
+          'third_rev' => ['Third offboard',
+                          'Third offboard/port value used for revenue'],
           'middle_rev' => ['Middle offboard',
                            'Middle offboard/port value used for revenue'],
           'last_rev' => ['Last offboard',
@@ -493,7 +497,7 @@ module Engine
 
         EVENTS_TEXT = Base::EVENTS_TEXT.merge(
            'lner_trigger' => ['LNER Trigger',
-                              'LNER will form at end of OR set, game ends at end of following OR set'],
+                              'LATE GAME will begin at end of this OR set, game ends at end of following OR set'],
          ).freeze
 
         CHARTERED_TOKEN_COST = 60

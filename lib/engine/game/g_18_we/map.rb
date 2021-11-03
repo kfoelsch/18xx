@@ -559,7 +559,7 @@ module Engine
                  'border=edge:0;border=edge:3',
             %w[
             A6
-            ] => 'offboard=revenue:white_40|gray_90|purple_140,groups:Midlands;path=a:4,b:_0;path=a:5,b:_0;'\
+            ] => 'offboard=revenue:green_40|gray_90|purple_140,groups:Midlands;path=a:4,b:_0;path=a:5,b:_0;'\
                  'border=edge:0;border=edge:3',
             %w[
             A8
