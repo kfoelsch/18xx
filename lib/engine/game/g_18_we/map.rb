@@ -14,370 +14,89 @@ module Engine
           '5' => 'unlimited',
           '6' => 'unlimited',
           '57' => 'unlimited',
+# yellow Y cities
+          'YYY' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'yellow',
+                'code' => 'city=revenue:30,slots:2;path=a:0,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=Y',
+              },
+          'YYK' =>
+              {
+                'count' => 'unlimited',
+                'color' => 'yellow',
+                'code' => 'city=revenue:30,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;label=Y',
+              },
+          'YYX' =>
+                  {
+                    'count' => 'unlimited',
+                    'color' => 'yellow',
+                    'code' => 'city=revenue:30,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=Y',
+                  },
+# yellow ★ cities
+          'Y★' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'yellow',
+                'code' => 'city=revenue:40,slots:2;path=a:0,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=★',
+              },
+          'K★' =>
+              {
+                'count' => 'unlimited',
+                'color' => 'yellow',
+                'code' => 'city=revenue:40,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;label=★',
+              },
 
-          '14' => 11,
-          '15' => 10,
-          '16' => 2,
-          '16_1a' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20,loc:0;path=a:0,b:_0;path=a:2,b:_0;path=a:1,b:3',
-          },
-          '16_1b' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20,loc:3;path=a:1,b:_0;path=a:3,b:_0;path=a:0,b:2',
-          },
-          '16_2' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:3,b:_0;path=a:0,b:_1;path=a:2,b:_1',
-          },
-          '17' => 5,
-          '17_1' =>
-          {
-            'count' => 5,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:3',
-          },
-          '17_2' =>
-          {
-            'count' => 5,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:_1;path=a:3,b:_1',
-          },
-          '18' => 5,
-          '18_1a' =>
-          {
-            'count' => 5,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:2',
-          },
-          '18_1b' =>
-          {
-            'count' => 5,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:1,b:_0;path=a:2,b:_0;path=a:0,b:3',
-          },
-          '18_2' =>
-          {
-            'count' => 5,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:2,b:_0;path=a:0,b:_1;path=a:3,b:_1',
-          },
-          '19' => 4,
-          '19_1a' =>
-          {
-            'count' => 4,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20,loc:0;path=a:0,b:_0;path=a:3,b:_0;path=a:2,b:4',
-          },
-          '19_1b' =>
-          {
-            'count' => 4,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:2,b:_0;path=a:4,b:_0;path=a:0,b:3',
-          },
-          '19_2' =>
-          {
-            'count' => 4,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:2,b:_0;path=a:4,b:_0;path=a:0,b:_1;path=a:3,b:_1',
-          },
-          '20' => 6,
-          '20_1' =>
-          {
-            'count' => 6,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:4',
-          },
-          '20_1b' =>
-          {
-            'count' => 6,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:1,b:_0;path=a:4,b:_0;path=a:0,b:3',
-          },
-          '20_2' =>
-          {
-            'count' => 6,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:_1;path=a:4,b:_1',
-          },
-          '21' => 2,
-          '21_1a' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:2,b:_0;path=a:3,b:4',
-          },
-          '21_1b' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:3,b:_0;path=a:4,b:_0;path=a:0,b:2',
-          },
-          '21_2' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:3,b:_0;path=a:4,b:_0;path=a:0,b:_1;path=a:2,b:_1',
-          },
-          '22' => 2,
-          '22_1a' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:2,b:3',
-          },
-          '22_1b' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:2,b:_0;path=a:3,b:_0;path=a:0,b:4',
-          },
-          '22_2' =>
-          {
-            'count' => 2,
-            'color' => 'green',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:2,b:_0;path=a:3,b:_0;path=a:0,b:_1;path=a:4,b:_1',
-          },
-          '53y' =>
-          {
-            'count' => 6,
-            'color' => 'green',
-            'code' => 'city=revenue:50,slots:2;path=a:0,b:_0;path=a:2,b:_0;path=a:4,b:_0;label=Y',
-          },
+              # green regular cities
+              '14' => 'unlimited',
+              '15' => 'unlimited',
+              '619' => 'unlimited',
+              # green villages
+              '87' => 'unlimited',
+              '88' => 'unlimited',
+              '204' => 'unlimited',
+              # green Y city
+              'YG' =>
+              {
+              'count' => 'unlimited',
+              'color' => 'green',
+              'code' => 'city=revenue:40,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=Y',
+              },
+              # green ★ city
+              'G★' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'green',
+                'code' => 'city=revenue:60,slots:3;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=★',
+              },
 
-          '61y' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'code' => 'city=revenue:60,slots:2;path=a:0,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=Y',
-          },
-          '201' => 2,
-          '202' => 4,
-          '611' => 8,
-          '619' => 10,
-          '621' => 2,
-          '778' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'code' => 'path=a:0,b:4;path=a:1,b:3;path=a:2,b:5',
-          },
-          '778_1a' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:3;path=a:2,b:5',
-          },
-          '778_1b' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:2,b:_0;path=a:5,b:_0;path=a:1,b:3;path=a:0,b:4',
-          },
-          '778_2a' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:2,b:_1;path=a:5,b:_1;'\
-                      'path=a:1,b:3',
-          },
-          '778_2b' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:_1;path=a:3,b:_1;'\
-                      'path=a:2,b:5',
-          },
-          '778_3' =>
-          {
-            'count' => 4,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20,loc:2;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;'\
-                      'path=a:2,b:_1;path=a:5,b:_1;path=a:1,b:_2;path=a:3,b:_2',
-          },
-          '779' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'code' => 'path=a:0,b:4;path=a:1,b:5;path=a:2,b:3',
-          },
-          '779_1a' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:5;path=a:2,b:3',
-          },
-          '779_1b' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:1,b:_0;path=a:5,b:_0;path=a:0,b:4;path=a:2,b:3',
-          },
-          '779_1c' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:2,b:_0;path=a:3,b:_0;path=a:0,b:4;path=a:1,b:5',
-          },
-          '779_2a' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:1,b:_1;path=a:5,b:_1;'\
-                      'path=a:2,b:3',
-          },
-          '779_2b' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:4,b:_0;path=a:2,b:_1;path=a:3,b:_1;'\
-                      'path=a:1,b:5',
-          },
-          '779_2c' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:5,b:_0;path=a:2,b:_1;path=a:3,b:_1;'\
-                      'path=a:0,b:4',
-          },
-          '779_3' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:5,b:_0;'\
-                      'path=a:2,b:_1;path=a:3,b:_1;path=a:0,b:_2;path=a:4,b:_2',
-          },
-          '780' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'code' => 'path=a:0,b:3;path=a:1,b:2;path=a:4,b:5',
-          },
-          '780_1a' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:2;path=a:4,b:5',
-          },
-          '780_1b' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:1,b:_0;path=a:2,b:_0;path=a:0,b:3;path=a:4,b:5',
-          },
-          '780_2a' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:_1;path=a:2,b:_1;'\
-                      'path=a:4,b:5',
-          },
-          '780_2b' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:2,b:_0;path=a:4,b:_1;path=a:5,b:_1;'\
-                      'path=a:0,b:3',
-          },
-          '780_3' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;town=revenue:20;path=a:1,b:_0;path=a:2,b:_0;'\
-                      'path=a:4,b:_1;path=a:5,b:_1;path=a:0,b:_2;path=a:3,b:_2',
-          },
-          '790' => 4,
-          '791' => 4,
-          '792' => 2,
-          '793' => 3,
-          '794' => 3,
-          '795' =>
-          {
-            'count' => 1,
-            'color' => 'brown',
-            'code' => 'city=revenue:80,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:4,b:_0;'\
-                      'path=a:5,b:_0;label=I',
-          },
-          '796' => 3,
-          '797' =>
-          {
-            'count' => 1,
-            'color' => 'brown',
-            'code' => 'city=revenue:60,slots:2;path=a:0,b:_0;path=a:3,b:_0;path=a:4,b:_0;label=H',
-          },
-          '798' => 3,
-          '798_1' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:4;path=a:2,b:5',
-          },
-          '798_2' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;path=a:1,b:_1;path=a:4,b:_1;'\
-                      'path=a:2,b:5',
-          },
-          '798_3' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'hidden' => 1,
-            'code' => 'town=revenue:20;town=revenue:20;town=revenue:20;path=a:0,b:_0;path=a:3,b:_0;'\
-                      'path=a:1,b:_1;path=a:4,b:_1;path=a:2,b:_2;path=a:5,b:_2',
-          },
-          '891y' =>
-          {
-            'count' => 3,
-            'color' => 'brown',
-            'code' => 'city=revenue:60,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;label=Y',
-          },
+# Brown regular cities
+          'BC' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'brown',
+                'code' => 'city=revenue:40,slots:3;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0',
+              },
+# Brown villages
+            '148' => 'unlimited',
+# Brown Y city
+          'BY' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'brown',
+                'code' => 'city=revenue:50,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=Y',
+              },
+# Brown ★ city
+          'B★' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'brown',
+                'code' => 'city=revenue:80,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=★',
+              },
+
+
+
+
         }.freeze
 
         LOCATION_NAMES = {
