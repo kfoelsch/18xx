@@ -5,8 +5,16 @@ module Engine
     module G18WE
       module Map
         TILES = {
-          '5' => 10,
-          '6' => 10,
+
+# yellow villages
+          '3' => 'unlimited',
+          '4' => 'unlimited',
+          '58' => 'unlimited',
+# yellow cities
+          '5' => 'unlimited',
+          '6' => 'unlimited',
+          '57' => 'unlimited',
+
           '14' => 11,
           '15' => 10,
           '16' => 2,
@@ -162,7 +170,7 @@ module Engine
             'color' => 'green',
             'code' => 'city=revenue:50,slots:2;path=a:0,b:_0;path=a:2,b:_0;path=a:4,b:_0;label=Y',
           },
-          '57' => 12,
+
           '61y' =>
           {
             'count' => 3,
@@ -369,24 +377,6 @@ module Engine
             'count' => 3,
             'color' => 'brown',
             'code' => 'city=revenue:60,slots:2;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;label=Y',
-          },
-          '8850' =>
-          {
-            'count' => 6,
-            'color' => 'yellow',
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:5,b:_0',
-          },
-          '8851' =>
-          {
-            'count' => 8,
-            'color' => 'yellow',
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:4,b:_0',
-          },
-          '8852' =>
-          {
-            'count' => 12,
-            'color' => 'yellow',
-            'code' => 'town=revenue:20;path=a:0,b:_0;path=a:3,b:_0',
           },
         }.freeze
 

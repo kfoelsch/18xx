@@ -153,7 +153,7 @@ module Engine
           {
             name: 'A',
             train_limit: 3, # per type
-            tiles: [:yellow],
+            tiles: %i[yellow green],
             operating_rounds: 1,
             status: %w[two_per first_rev],
           },
