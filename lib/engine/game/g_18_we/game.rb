@@ -162,7 +162,7 @@ module Engine
             on: 'B',
             train_limit: 3, # 3 type
             tiles: %i[yellow green],
-            operating_rounds: 2,
+            operating_rounds: 1,
             status: %w[two_per first_rev],
           },
           {
@@ -185,7 +185,7 @@ module Engine
             name: 'E',
             on: 'E',
             train_limit: 2, # per type
-            tiles: %i[yellow green brown],
+            tiles: %i[yellow green brown gray],
             operating_rounds: 3,
             status: %w[two_per third_rev],
           },
@@ -193,7 +193,7 @@ module Engine
             name: 'F',
             on: 'F',
             train_limit: 2, # per type
-            tiles: %i[yellow green brown],
+            tiles: %i[yellow green brown gray],
             operating_rounds: 3,
             status: %w[two_per third_rev],
           },
@@ -201,7 +201,7 @@ module Engine
             name: 'G',
             on: 'G',
             train_limit: 3, # across all types
-            tiles: %i[yellow green brown],
+            tiles: %i[yellow green brown gray blue],
             operating_rounds: 3,
             status: %w[two_per last_rev],
           },
@@ -209,7 +209,7 @@ module Engine
             name: 'H',
             on: 'H',
             train_limit: 3, # across all types
-            tiles: %i[yellow green brown],
+            tiles: %i[yellow green brown gray blue],
             operating_rounds: 3,
             status: %w[two_per last_rev],
           },
@@ -504,16 +504,16 @@ module Engine
         UNCHARTERED_TOKEN_COST = 40
 
         LONDON_TOKEN_HEXES = %w[
-            B15
-            D15
+            F5
+            E6
         ].freeze
 
         LONDON_HEXES = %w[
-            A12
-            A14
-            B15
-            C14
-            D15
+            F5
+            E6
+            D7
+            C8
+            B7
         ].freeze
 
         IPSWITCH_HEX = 'F11'

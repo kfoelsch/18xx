@@ -122,84 +122,127 @@ module Engine
                 'color' => 'gray',
                 'code' => 'city=revenue:100,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=★',
               },
-              # black regular cities
-                                      'lC' =>
-                                          {
-                                          'count' => 'unlimited',
-                                          'color' => 'blue',
-                                          'code' => 'city=revenue:60,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0',
-                                        },
+# black regular cities
+            'lC' =>
+                {
+                'count' => 'unlimited',
+                'color' => 'blue',
+                'code' => 'city=revenue:60,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0',
+              },
 
-                            # Grey Y city
-                                      'lY' =>
-                                            {
-                                            'count' => 'unlimited',
-                                            'color' => 'blue',
-                                            'code' => 'city=revenue:80,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=Y',
-                                          },
+  # Grey Y city
+            'lY' =>
+                  {
+                  'count' => 'unlimited',
+                  'color' => 'blue',
+                  'code' => 'city=revenue:80,slots:4;path=a:0,b:_0;path=a:1,b:_0;path=a:2,b:_0;path=a:3,b:_0;path=a:4,b:_0;path=a:5,b:_0;label=Y',
+                },
 
 
         }.freeze
 
         LOCATION_NAMES = {
-          'A6' => 'Midlands',
-          'A10' => 'The West',
-          'E2' => 'Wells-Next-The-Sea',
-          'B3' => 'Holbeach',
-          'C4' => "King's Lynn",
-          'D3' => 'Hunstanton',
-          'E4' => 'Fakenham',
-          'F3' => 'Cromer',
-          'G4' => 'N Walsham',
-          'B5' => 'Wisbech',
-          'C6' => 'Downham Market',
-          'D5' => 'Swaffham',
-          'E6' => 'Watton',
-          'F5' => 'Norwich',
-          'G6' => 'Acle',
-          'H5' => 'Great Yarmouth',
-          'B7' => 'March',
-          'C8' => 'Ely',
-          'D7' => 'Brandon',
-          'E8' => 'Thetford',
-          'F7' => 'Diss',
-          'G8' => 'Beccles',
-          'H7' => 'Lowestoft',
-          'B9' => 'Cambridge',
-          'C10' => 'Newmarket',
-          'D9' => 'Bury St. Edmunds',
-          'E10' => 'Stowmarket',
-          'F9' => 'Framingham',
-          'G10' => 'Woodbridge',
-          'B11' => 'Royston',
-          'C12' => 'Great Dunmow',
-          'D11' => 'Sudbury',
-          'E12' => 'Colchester',
-          'F11' => 'Ipswich',
-          'G12' => 'Felixstowe',
-          'B13' => "Bishop's Stortford",
-          'C14' => 'London',
-          'D13' => 'Witham',
-          'E14' => 'Tiptree',
-          'F13' => 'Harwich',
+          'F11' => 'Paris',
+          'I16' => 'Milan',
+          'L7' => 'Berlin',
+
+          'A6' => 'Greater UK',
+          'A12' => 'Bay of Biscay',
+
+          'B11' => 'Brest',
+          'D17' => 'Brive-la-Gaillarde',
+          'D19' => 'Toulouse',
+          'E10' => 'Rouen',
+          'E16' => 'Clermont-Ferrand',
+          'F15' => 'Moulins',
+          'G14' => 'Dijon',
+          'G18' => 'Avignon',
+
+          'C12' => 'Nantes',
+          'C16' => 'Bordeaux',
+          'E12' => 'Orleans',
+          'G16' => 'Lyon',
+          'G20' => 'Marseille',
+
+          'J17' => 'Verona',
+          'K12' => 'Pilsen',
+          'M12' => 'Brno',
+          'N9' => 'Lodz',
+          'O10' => 'Krakow',
+          'L16' => 'Trieste',
+
+          'I18' => 'Genoa',
+          'J21' => 'Roma',
+          'K16' => 'Venice',
+          'M14' => 'Wien',
+          'O14' => 'Budapest',
+          'O8' => 'Warsaw',
+          'L11' => 'Praha',
+
+          'G8' => 'Brussels',
+          'H9' => 'Essen',
+          'H13' => 'Straßbourg',
+          'I10' => 'Frankfurt',
+          'L5' => 'Stettin',
+          'O4' => 'Königsburg',
+
+          'H7' => 'Amsterdam',
+          'H11' => 'Köln',
+          'J5' => 'Hamburg',
+          'J13' => 'München',
+          'L9' => 'Dresden',
+          'M10' => 'Breslau',
+          'N5' => 'Danzig',
+          'K2' => 'Kobenhavn',
         }.freeze
 
         HEXES = {
           white: {
-            # towns
+            # Star cities
             %w[
-              B3
-              D3
-              G4
-              E6
-              G6
-              D7
+            F11
+            I16
+            L7
+            ] => 'city=revenue:0;label=★',
+            # French towns
+            %w[
+              C14
+              C18
+              D11
+              D13
+              D15
+              E14
+              E18
+              E20
               F9
-              E10
+              F13
+              F17
+              F19
               G10
-              B11
-              C12
+              G12
             ] => 'town=revenue:0',
+            # French regular cities
+            %w[
+            B11
+            D17
+            D19
+            E10
+            E16
+            F15
+            G14
+            G18
+            ] => 'city=revenue:0',
+            # French Y cities
+            %w[
+            C12
+            C16
+            E12
+            G16
+            G20
+            ] => 'city=revenue:0;label=Y',
+
+
+
             %w[
               E14
             ] => 'town=revenue:0;border=edge:4,type:impassable',
@@ -232,9 +275,6 @@ module Engine
             C8
             D9
             ] => 'city=revenue:0;label=Y',
-            %w[
-            F11
-            ] => 'city=revenue:0;label=N;border=edge:0,type:impassable',
             %w[
             G12
             ] => 'city=revenue:0;border=edge:1,type:impassable',
@@ -310,7 +350,7 @@ module Engine
                  'border=edge:0;border=edge:3',
             %w[
             A6
-            ] => 'offboard=revenue:green_40|gray_90|purple_140,groups:Midlands;path=a:4,b:_0;path=a:5,b:_0;'\
+            ] => 'offboard=revenue:white_40|gray_90|purple_140,groups:Midlands;path=a:4,b:_0;path=a:5,b:_0;'\
                  'border=edge:0;border=edge:3',
             %w[
             A8
@@ -322,24 +362,24 @@ module Engine
             ] => 'offboard=revenue:white_70|gray_100|purple_120,groups:West;path=a:4,b:_0;path=a:5,b:_0;'\
                  'border=edge:0;border=edge:3',
             %w[
-            A12
+            F5
             ] => 'offboard=revenue:white_100|gray_150|purple_200,groups:London,hide:1;path=a:5,b:_0;'\
                  'offboard=revenue:white_70|gray_100|purple_120,groups:West,hide:1;path=a:4,b:_1;'\
-                 'border=edge:0;border=edge:3;partition=a:2,b:5,type:divider',
+                 'border=edge:0;border=edge:3;',
             %w[
-            A14
+            E6
             ] => 'offboard=revenue:white_100|gray_150|purple_200,groups:London,hide:1;path=a:4,b:_0;'\
                  'border=edge:5;border=edge:3',
             %w[
-            C14
+            D7
             ] => 'offboard=revenue:white_100|gray_150|purple_200,groups:London;path=a:2,b:_0;path=a:3,b:_0;'\
                  'path=a:4,b:_0;border=edge:5;border=edge:1',
             %w[
-            B15
+            C8
             ] => 'offboard=revenue:white_100|gray_150|purple_200,groups:London,hide:1;path=a:3,b:_0;'\
                  'border=edge:2;city=revenue:0,slots:2;border=edge:4',
             %w[
-            D15
+            B7
             ] => 'offboard=revenue:white_100|gray_150|purple_200,groups:London,hide:1;path=a:3,b:_0;path=a:4,b:_0;'\
                  'border=edge:2;city=revenue:0,slots:2',
           },
