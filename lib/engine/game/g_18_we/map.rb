@@ -169,7 +169,7 @@ module Engine
           'M12' => 'Brno',
           'N9' => 'Lodz',
           'O10' => 'Krakow',
-          'L16' => 'Trieste',
+          'L15' => 'Trieste',
 
           'I18' => 'Genoa',
           'J21' => 'Roma',
@@ -241,8 +241,83 @@ module Engine
             G20
             ] => 'city=revenue:0;label=Y',
 
+            # Southeast towns
+            %w[
+              H15
+              H17
+              H19
+              I14
+              J15
+              J19
+              K20
+              K18
+              K14
+              L13
+              M16
+              N11
+              N13
+              N15
+              O12
+            ] => 'town=revenue:0',
+            # Southeast regular cities
+            %w[
+            J17
+            K12
+            M12
+            N9
+            O10
+            L15
+            ] => 'city=revenue:0',
+            # Southeast Y cities
+            %w[
+            I18
+            J21
+            K16
+            M14
+            O14
+            O8
+            L11
+            ] => 'city=revenue:0;label=Y',
 
+            # Germanic towns
+            %w[
+              I6
+              I8
+              I12
+              J3
+              J7
+              J9
+              J11
+              J13
+              K6
+              K8
+              K10
+              M6
+              M8
+              N7
+              O6
 
+            ] => 'town=revenue:0',
+            # Germanic regular cities
+            %w[
+            G8
+            H9
+            H13
+            I10
+            L5
+            O4
+            ] => 'city=revenue:0',
+            # Germanic Y cities
+            %w[
+            H7
+            H11
+            J5
+            H13
+            L9
+            M10
+            N5
+            K2
+            ] => 'city=revenue:0;label=Y',
             %w[
               E14
             ] => 'town=revenue:0;border=edge:4,type:impassable',
@@ -254,7 +329,6 @@ module Engine
             B5
             D5
             C6
-            B7
             F7
             H7
             E8
@@ -314,7 +388,7 @@ module Engine
                  'offboard=revenue:white_60|gray_90|purple_120,groups:East,hide:1;path=a:1,b:_1;'\
                  'partition=a:2,b:5,type:divider;border=edge:3;border=edge:0',
             %w[
-            I8
+            I20
             ] => 'offboard=revenue:white_60|gray_90|purple_120,groups:East;path=a:2,b:_0;'\
                  'border=edge:3;border=edge:1',
             %w[
@@ -326,16 +400,16 @@ module Engine
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark,hide:1;path=a:1,b:_0;'\
                  'border=edge:0;border=edge:3,type:divider',
             %w[
-            H13
+            H21
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark;path=a:2,b:_0;'\
                  'border=edge:3;border=edge:1',
             %w[
-            G14
+            G12
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark,hide:1;path=a:3,b:_0;'\
                  'offboard=revenue:white_70|gray_100|purple_130,groups:Holland,hide:1;path=a:2,b:_1;'\
                  'border=edge:4;border=edge:1;partition=a:3,b:0,type:divider',
             %w[
-            F15
+            F21
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Holland;path=a:3,b:_0;'\
                  'border=edge:4',
           },

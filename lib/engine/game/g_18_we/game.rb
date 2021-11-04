@@ -523,14 +523,14 @@ module Engine
         PORT_FREIGHT_BONUS = 30
 
         REAL_PHASE_TO_REV_PHASE = {
-          'A' => :white,
-          'B' => :white,
-          'C' => :gray,
-          'D' => :gray,
-          'E' => :purple,
-          'F' => :purple,
-          'G' => :purple,
-          'H' => :purple,
+          'A' => :green,
+          'B' => :green,
+          'C' => :green,
+          'D' => :brown,
+          'E' => :gray,
+          'F' => :gray,
+          'G' => :blue,
+          'H' => :blue,
         }.freeze
 
         NORM_TOKENS = 7
