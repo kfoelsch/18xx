@@ -375,15 +375,13 @@ module Engine
             C2
             ] => 'offboard=revenue:white_80|gray_90|purple_100,groups:North;path=a:0,b:_0;'\
                  'border=edge:4,type:divider',
-            %w[
-            G2
-            ] => 'offboard=revenue:white_80|gray_90|purple_100,groups:North1;border=edge:2',
+
             %w[
             I4
             ] => 'offboard=revenue:white_80|gray_100|purple_120,groups:NorthEast;path=a:1,b:_0;'\
                  'border=edge:0',
             %w[
-            I6
+            E8
             ] => 'offboard=revenue:white_80|gray_100|purple_120,groups:NorthEast,hide:1;path=a:2,b:_0;'\
                  'offboard=revenue:white_60|gray_90|purple_120,groups:East,hide:1;path=a:1,b:_1;'\
                  'partition=a:2,b:5,type:divider;border=edge:3;border=edge:0',
@@ -391,12 +389,15 @@ module Engine
             I20
             ] => 'offboard=revenue:white_60|gray_90|purple_120,groups:East;path=a:2,b:_0;'\
                  'border=edge:3;border=edge:1',
+           %w[
+           F7
+           ] => 'offboard=revenue:white_80|gray_90|purple_100,groups:North1;border=edge:2',
             %w[
-            H9
+            G6
             ] => 'offboard=revenue:white_60|gray_90|purple_120,groups:East,hide:1;path=a:3,b:_0;'\
                  'border=edge:4;border=edge:0,type:divider',
             %w[
-            H11
+            H5
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark,hide:1;path=a:1,b:_0;'\
                  'border=edge:0;border=edge:3,type:divider',
             %w[
@@ -404,7 +405,7 @@ module Engine
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark;path=a:2,b:_0;'\
                  'border=edge:3;border=edge:1',
             %w[
-            G12
+            G22
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Denmark,hide:1;path=a:3,b:_0;'\
                  'offboard=revenue:white_70|gray_100|purple_130,groups:Holland,hide:1;path=a:2,b:_1;'\
                  'border=edge:4;border=edge:1;partition=a:3,b:0,type:divider',
