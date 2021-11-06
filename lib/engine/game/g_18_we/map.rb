@@ -333,21 +333,19 @@ module Engine
             H7
             E8
             G8
-            C10
             D11
             B13
             D13
             ] => 'city=revenue:0',
             %w[
             F5
-            B9
+
             E12
             ] => 'city=revenue:0;label=N',
             %w[
             H5
             C4
             C8
-            D9
             ] => 'city=revenue:0;label=Y',
             %w[
             G12
@@ -359,11 +357,11 @@ module Engine
           },
           blue: {
             %w[
-            E0
+            C10
             ] => 'offboard=revenue:white_80|gray_90|purple_100,groups:North0;'\
                  'border=edge:1;border=edge:5',
             %w[
-            D1
+            B9
             ] => 'offboard=revenue:white_80|gray_90|purple_100,groups:North0,hide:1;path=a:5,b:_0;'\
                  'border=edge:1,type:divider;border=edge:4',
             %w[
