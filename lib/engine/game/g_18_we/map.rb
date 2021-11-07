@@ -357,11 +357,11 @@ module Engine
           blue: {
             %w[
             J1
-            ] => 'offboard=revenue:green_50|brown_90|gray_120|blue_140,hide:1,groups:Skagerrak;path=a:0,b:_0;'\
-                 'border=edge:1',
+            ] => 'offboard=revenue:green_50|brown_90|gray_120|blue_140,hide:1,groups:Skagerrak;'\
+                 'path=a:5,b:_0;border=edge:1',
             %w[
             I2
-            ] => 'offboard=revenue:green_50|brown_90|gray_120|blue_140,groups:Skagerrak;path=a:5,b:_0;'\
+            ] => 'offboard=revenue:green_50|brown_90|gray_120|blue_140,groups:Skagerrak;'\
                  'border=edge:1;border=edge:4',
             %w[
             O2
@@ -377,12 +377,12 @@ module Engine
                  'border=edge:4',
            %w[
            L3
-           ] => 'offboard=revenue:green_50|brown_70|gray_100|blue_120,groups:Sound;path=a:0,b:_0;'\
+           ] => 'offboard=revenue:green_50|brown_70|gray_100|blue_120,groups:Sound;path=a:0,b:_0;path=a:2,b:_0;'\
                 'border=edge:1;border=edge:4',
            %w[
            K4
            ] => 'offboard=revenue:ggreen_50|brown_70|gray_100|blue_120,hide:1,groups:Sound;path=a:1,b:_0;path=a:5,b:_0;'\
-                'border=edge:4',
+                'path=a:3,b:_0;border=edge:4',
 
             %w[
             C10
