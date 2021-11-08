@@ -156,7 +156,7 @@ module Engine
           'D7' => 'London',
           'P5' => 'St.Petersburg',
           'P9' => 'Poland & Ukraine',
-          'P21' => 'Black Sea',
+          'P19' => 'Black Sea',
           'O22' => 'Aegean Sea',
           'L17' => 'Adriatic Sea',
           'K22' => 'Naples & S.Italy',
@@ -441,11 +441,10 @@ module Engine
                  'border=edge:4;border=edge:5',
              %w[
              P17
-             ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:BlackSea;'\
-                  'border=edge:0',
+             ] => 'border=edge:0',
             %w[
             P19
-            ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:BlackSea,hide:1;path=a:1,b:_0;'\
+            ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:BlackSea;path=a:1,b:_0;'\
                  'border=edge:3',
             %w[
             F21

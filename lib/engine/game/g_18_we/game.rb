@@ -218,7 +218,7 @@ module Engine
         def game_trains
           [
             {
-              name: 'A',
+              name: 'A⇩',
               distance: 99,
               price: 100,
               rusts_on: 'C',
@@ -226,100 +226,178 @@ module Engine
               no_local: true,
               variants: [
                 {
-                  name: '1F*',
-                  distance: 1,
+                  name: '2F:10**',
+                  distance: 2,
                   price: 100,
                   no_local: true,
                 },
                 {
-                  name: '2L*',
+                  name: '2R**',
                   distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 2 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
                   price: 100,
                 },
                 {
-                  name: '2E*',
-                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 2, 'visit' => 2 },
+                  name: '2/3E**',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 2, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
                   price: 100,
                 },
               ],
             },
             {
-              name: 'B',
+              name: 'B⇧',
               distance: 99,
-              price: 200,
+              price: 150,
               rusts_on: 'E',
               num: @optional_rules&.include?(:short_length) ? 5 : 6,
               variants: [
                 {
-                  name: '2F',
-                  distance: 2,
-                  price: 200,
+                  name: '5F:10*',
+                  distance: 5,
+                  price: 150,
                 },
                 {
-                  name: '2/3L',
+                  name: '2/3R*',
                   distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 200,
+                  price: 150,
                 },
                 {
-                  name: '2/3E',
-                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 2, 'visit' => 3 },
+                  name: '3E*',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 200,
+                  price: 150,
                 },
               ],
             },
             {
-              name: 'C',
+              name: 'B⇩',
               distance: 99,
-              price: 280,
+              price: 150,
+              rusts_on: 'E',
+              num: @optional_rules&.include?(:short_length) ? 5 : 6,
+              variants: [
+                {
+                  name: '5F:10**',
+                  distance: 5,
+                  price: 150,
+                },
+                {
+                  name: '2/3R**',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 3 },
+                             { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
+                  price: 150,
+                },
+                {
+                  name: '3E**',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
+                             { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
+                  price: 150,
+                },
+              ],
+            },
+            {
+              name: 'C⇧',
+              distance: 99,
+              price: 350,
               rusts_on: 'F',
               num: @optional_rules&.include?(:long_length) ? 5 : 4,
               variants: [
                 {
-                  name: '3F',
-                  distance: 3,
-                  price: 280,
+                  name: '10F:20*',
+                  distance: 10,
+                  price: 350,
                 },
                 {
-                  name: '3L',
-                  distance: [{ 'nodes' => %w[city], 'pay' => 3, 'visit' => 3 },
+                  name: '4R*',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 4, 'visit' => 4 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 280,
+                  price: 350,
                 },
                 {
-                  name: '3E',
+                  name: '1XX+2X*',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 280,
+                  price: 350,
                 },
               ],
             },
             {
-              name: 'D',
+              name: 'C⇩',
               distance: 99,
-              price: 360,
-              rusts_on: 'G',
+              price: 350,
+              rusts_on: 'F',
+              num: @optional_rules&.include?(:long_length) ? 5 : 4,
+              variants: [
+                {
+                  name: '10F:20**',
+                  distance: 10,
+                  price: 350,
+                },
+                {
+                  name: '4R**',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 4, 'visit' => 4 },
+                             { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
+                  price: 350,
+                },
+                {
+                  name: '1XX+2X**',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
+                             { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
+                  price: 350,
+                },
+              ],
+            },
+            {
+              name: 'D⇧',
+              distance: 99,
+              price: 500,
+              rusts_on: 'H',
               num: @optional_rules&.include?(:long_length) ? 4 : 3,
               variants: [
                 {
-                  name: '5F*',
-                  distance: 5,
-                  price: 360,
+                  name: '∞F:20*',
+                  distance: 99,
+                  price: 500,
                 },
                 {
-                  name: '4L*',
-                  distance: [{ 'nodes' => %w[city], 'pay' => 4, 'visit' => 4 },
+                  name: '6R*',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 6, 'visit' => 6 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 360,
+                  price: 500,
                 },
                 {
-                  name: '4E*',
+                  name: '2XX+2X*',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 4, 'visit' => 4 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 360,
+                  price: 500,
+                },
+              ],
+            },
+            {
+              name: 'D⇩',
+              distance: 99,
+              price: 500,
+              rusts_on: 'H',
+              num: @optional_rules&.include?(:long_length) ? 4 : 3,
+              variants: [
+                {
+                  name: '∞F:20**',
+                  distance: 99,
+                  price: 500,
+                },
+                {
+                  name: '6R**',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 6, 'visit' => 6 },
+                             { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
+                  price: 500,
+                },
+                {
+                  name: '2XX+2X**',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 4, 'visit' => 4 },
+                             { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
+                  price: 500,
                 },
               ],
             },
@@ -500,8 +578,8 @@ module Engine
                               'LATE GAME will begin at end of this OR set, game ends at end of following OR set'],
          ).freeze
 
-        CHARTERED_TOKEN_COST = 60
-        UNCHARTERED_TOKEN_COST = 40
+        CHARTERED_TOKEN_COST = 20
+        UNCHARTERED_TOKEN_COST = 20
 
         LONDON_TOKEN_HEXES = %w[
             F5
@@ -515,9 +593,6 @@ module Engine
             C8
             B7
         ].freeze
-
-        IPSWITCH_HEX = 'F11'
-        HARWICH_HEX = 'F13'
 
         FREIGHT_BONUS = 20
         PORT_FREIGHT_BONUS = 30

@@ -174,7 +174,7 @@ module Engine
             shares: [30, 10, 10, 10, 10, 10, 10, 10],
             max_ownership_percent: 100,
             tokens: [0, 0, 0],
-            coordinates: 'B13',
+            coordinates: 'F15',
             color: '#C0C0C0',
             text_color: '#355E3B',
             reservation_color: nil,
