@@ -474,7 +474,22 @@ module Engine
             P11
             ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,hide:1,groups:PolandAndUkraine;path=a:1,b:_0;path=a:2,b:_0;'\
                  'border=edge:0;border=edge:3',
-
+             %w[
+             P13
+             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,hide:1,groups:Constantinople;path=a:2,b:_0;path=a:1,b:_0;'\
+                  'border=edge:0',
+             %w[
+             P15
+             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:Constantinople;path=a:2,b:_0;'\
+                  'border=edge:0;border=edge:3',
+              %w[
+              O16
+              ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,hide:1,groups:Constantinople;path=a:3,b:_0;'\
+                   'border=edge:1;border=edge:4',
+             %w[
+             N17
+             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,hide:1,groups:Constantinople;'\
+                  'border=edge:1;border=edge:4',
 
             %w[
             A6
