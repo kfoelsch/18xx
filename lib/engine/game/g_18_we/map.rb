@@ -317,22 +317,7 @@ module Engine
             N5
             K2
             ] => 'city=revenue:0;label=Y',
-            # cities
-            %w[
-            E2
-            F3
-            E4
-            F7
-            H7
-            G8
-            ] => 'city=revenue:0',
-            %w[
-            F5
-            E12
-            ] => 'city=revenue:0;label=N',
-            %w[
-            C4
-            ] => 'city=revenue:0;label=Y',
+
           },
           blue: {
             %w[
@@ -406,14 +391,14 @@ module Engine
                 'border=edge:1;border=edge:4',
             %w[
             G6
-            ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,groups:NorthSea,hide:1;path=a:0,b:_0;path=a:5,b:_0;'\
+            ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,groups:NorthSea,hide:1;path=a:0,b:_0;path=a:5,b:2;'\
                  'border=edge:4;border=edge:1',
            %w[
            F7
-           ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,hide:1,groups:NorthSea;path=a:5,b:_0;border=edge:4',
+           ] => 'path=a:5,b:2;path=a:2,b:0;border=edge:4',
             %w[
             E8
-            ] => 'offboard=revenue:reen_70|brown_110|gray_140|blue_160,groups:Channel,hide:1;path=a:0,b:_0;'\
+            ] => 'path=a:3,b:0;path=a:3,b:5;'\
                  'border=edge:4,type:divider;border=edge:1',
             %w[
             I20
@@ -531,8 +516,7 @@ module Engine
              ] => 'path=a:1,b:5',
             %w[
             A8
-            ] => 'offboard=revenue:white_40|gray_90|purple_140,hide:1,groups:UK;'\
-                 'border=edge:0;border=edge:3',
+            ] => 'border=edge:0;border=edge:3',
 
             %w[
             D21
@@ -564,24 +548,22 @@ module Engine
                   'border=edge:2;border=edge:5,type:divider',
             %w[
             F5
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;path=a:5,b:_0;path=a:0,b:_0;'\
+            ] => 'path=a:5,b:1;'\
                  'border=edge:4;border=edge:1;',
-            %w[
-            E6
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;path=a:0,b:_0;path=a:5,b:_0;'\
-                 'border=edge:4;border=edge:1;city=revenue:0,slots:5',
+           %w[
+           E6
+           ] => 'city=slots:5,revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;path=a:0,b:_0;path=a:2,b:_0;path=a:4,b:_0;'\
+                'path=a:5,b:_0;border=edge:4;border=edge:1',
             %w[
             D7
             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London;'\
                  'border=edge:4;border=edge:1',
             %w[
             C8
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;'\
-                 'border=edge:2;border=edge:4',
+            ] =>   'border=edge:2;border=edge:4',
             %w[
             B7
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;'\
-                 'border=edge:5',
+            ] =>   'border=edge:5',
           },
         }.freeze
 
