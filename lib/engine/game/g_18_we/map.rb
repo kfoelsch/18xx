@@ -142,12 +142,30 @@ module Engine
         }.freeze
 
         LOCATION_NAMES = {
+          'H5' => 'North Sea',
+          'C10' => 'English Channel',
+          'I2' => 'Skagerrak',
+          'L3' => 'The Sound',
+          'N3' => 'Baltic Sea',
+          'A6' => 'Greater UK',
+          'B15' => 'Bay of Biscay',
+          'B19' => 'W.Spain & Portugal',
+          'E22' => 'Catalonia & S.Spain',
+          'G22' => 'W. Med',
+          'I20' => 'Ligurian Sea',
+          'D7' => 'London',
+          'P5' => 'St.Petersburg',
+          'P9' => 'Poland & Ukraine',
+          'P21' => 'Black Sea',
+          'O22' => 'Aegean Sea',
+          'L17' => 'Adriatic Sea',
+          'K22' => 'Naples & S.Italy',
+          'L1' => 'Scandinavia',
+          'N19' => 'Constantinople',
+
           'F11' => 'Paris',
           'I16' => 'Milan',
           'L7' => 'Berlin',
-
-          'A6' => 'Greater UK',
-          'A12' => 'Bay of Biscay',
 
           'B11' => 'Brest',
           'D17' => 'Brive-la-Gaillarde',
@@ -467,7 +485,7 @@ module Engine
             %w[
             P5
             ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:StPetersburg;path=a:2,b:_0;path=a:1,b:_0;'\
-                 'border=edge:0;border=edge:3',
+                 'border=edge:0,type:divider;border=edge:3',
             %w[
             P7
             ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,hide:1,groups:PolandAndUkraine;path=a:2,b:_0;path=a:1,b:_0;'\
@@ -479,7 +497,7 @@ module Engine
             %w[
             P11
             ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,hide:1,groups:PolandAndUkraine;path=a:1,b:_0;path=a:2,b:_0;'\
-                 'border=edge:0;border=edge:3',
+                 'border=edge:0,type:divider;border=edge:3',
              %w[
              P13
              ] => 'path=a:2,b:0;path=a:1,b:0;border=edge:0',
@@ -491,15 +509,18 @@ module Engine
               ] => 'path=a:3,b:0;path=a:4,b:0;border=edge:1;border=edge:4;border=edge:0',
               %w[
               O18
-              ] => 'path=a:3,b:0;border=edge:0;border=edge:2;border=edge:3',
+              ] => 'path=a:3,b:0;border=edge:0;border=edge:2;border=edge:3;border=edge:1',
               %w[
               O20
               ] => 'city=slots:5,revenue:green_90|brown_140|gray_200|blue_250,groups:Constantinople,hide:1;path=a:1,b:_0;path=a:4,b:_0;path=a:3,b:_0;'\
-                   'border=edge:4;border=edge:1',
+                   'border=edge:3;border=edge:2',
              %w[
              N17
-             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,hide:1,groups:Constantinople;'\
-                  'border=edge:5;border=edge:4',
+             ] => 'border=edge:5;border=edge:4;border=edge:3',
+             %w[
+             N19
+             ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:Constantinople;'\
+                  'border=edge:5;border=edge:4;border=edge:3',
 
             %w[
             A6
@@ -533,7 +554,7 @@ module Engine
              %w[
              L21
              ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,hide:1,groups:Italy;path=a:2,b:_0;'\
-                  'border=edge:4',
+                  'border=edge:1',
            %w[
            K22
            ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,groups:Italy;path=a:2,b:_0;path=a:3,b:_0;'\
