@@ -322,9 +322,6 @@ module Engine
             E2
             F3
             E4
-            B5
-            D5
-            C6
             F7
             H7
             G8
@@ -439,10 +436,6 @@ module Engine
             H21
             ] => 'offboard=revenue:white_70|gray_100|purple_130,groups:Ligurian,hide:1;path=a:2,b:_0;path=a:3,b:_0;'\
                  'border=edge:4;border=edge:5',
-            %w[
-            G22
-            ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:Med;path=a:3,b:_0;'\
-                 'border=edge:2;border=edge:4,type:divider',
              %w[
              P17
              ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:BlackSea;'\
@@ -455,6 +448,18 @@ module Engine
             F21
             ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,hide:1,groups:Med;path=a:3,b:_0;path=a:2,b:_0;path=a:4,b:_0;'\
                  'border=edge:5',
+             %w[
+             G22
+             ] => 'offboard=revenue:green_60|brown_90|gray_120|blue_140,groups:Aegean;path=a:3,b:_0;'\
+                  'border=edge:2;border=edge:4,type:divider',
+              %w[
+              N21
+              ] => 'offboard=revenue:green_70|brown_120|gray_160|blue_200,hide:1,groups:Aegean;path=a:4,b:_0;'\
+                   'border=edge:5',
+               %w[
+               O22
+               ] => 'offboard=revenue:green_70|brown_120|gray_160|blue_200,groups:Med;'\
+                    'border=edge:2;border=edge:4,type:divider',
            %w[
            I22
            ] => 'offboard=revenue:green_70|brown_110|gray_140|blue_160,groups:Ligurian,hide:1;path=a:4,b:_0;path=a:5,b:_0;'\
@@ -501,24 +506,33 @@ module Engine
               ] => 'path=a:3,b:0;path=a:4,b:0;border=edge:1;border=edge:4;border=edge:0',
               %w[
               O18
-              ] => 'path=a:3,b:0;border=edge:1;border=edge:4;border=edge:0;border=edge:3',
+              ] => 'path=a:3,b:0;border=edge:0;border=edge:2;border=edge:3',
               %w[
               O20
-              ] => 'city=slots:5,revenue:green_90|brown_140|gray_200|blue_250,groups:Constantinople,hide:1;path=a:0,b:_0;path=a:4,b:_0;path=a:3,b:_0;'\
+              ] => 'city=slots:5,revenue:green_90|brown_140|gray_200|blue_250,groups:Constantinople,hide:1;path=a:1,b:_0;path=a:4,b:_0;path=a:3,b:_0;'\
                    'border=edge:4;border=edge:1',
              %w[
              N17
              ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,hide:1,groups:Constantinople;'\
-                  'border=edge:1;border=edge:4',
+                  'border=edge:5;border=edge:4',
 
             %w[
             A6
-            ] => 'offboard=revenue:white_40|gray_90|purple_140,groups:Midlands;path=a:4,b:_0;path=a:5,b:_0;'\
+            ] => 'offboard=revenue:green_70|brown_120|gray_160|blue_200,groups:UK;path=a:4,b:_0;'\
                  'border=edge:0;border=edge:3',
             %w[
+            B5
+             ] => 'path=a:1,b:5',
+             %w[
+             C6
+              ] => 'path=a:2,b:4',
+            %w[
+            D5
+             ] => 'path=a:1,b:5',
+            %w[
             A8
-            ] => 'offboard=revenue:white_40|gray_90|purple_140,groups:Midlands,hide:1;path=a:4,b:_0;'\
-                 'border=edge:0;border=edge:3;partition=a:2,b:5,type:divider',
+            ] => 'offboard=revenue:white_40|gray_90|purple_140,hide:1,groups:UK;'\
+                 'border=edge:0;border=edge:3',
 
             %w[
             D21
@@ -562,11 +576,11 @@ module Engine
                  'border=edge:4;border=edge:1',
             %w[
             C8
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;path=a:3,b:_0;'\
+            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;'\
                  'border=edge:2;border=edge:4',
             %w[
             B7
-            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;path=a:3,b:_0;path=a:4,b:_0;'\
+            ] => 'offboard=revenue:green_90|brown_140|gray_200|blue_250,groups:London,hide:1;'\
                  'border=edge:5',
           },
         }.freeze
