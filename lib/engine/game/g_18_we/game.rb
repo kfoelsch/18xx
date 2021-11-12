@@ -151,14 +151,14 @@ module Engine
 
         PHASES = [
           {
-            name: 'A',
+            name: '1',
             train_limit: 2, # per type
             tiles: %i[yellow green],
             operating_rounds: 1,
             status: %w[two_per first_rev],
           },
           {
-            name: 'B',
+            name: '2',
             on: ['B⇩', 'C⇧' ],
             train_limit: 2, # 2 type
             tiles: %i[yellow green],
@@ -166,7 +166,7 @@ module Engine
             status: %w[two_per first_rev],
           },
           {
-            name: 'C',
+            name: '3',
             on: ['C⇩', 'D⇧'],
             train_limit: 2, # per type
             tiles: %i[yellow green brown],
@@ -174,7 +174,7 @@ module Engine
             status: %w[two_per second_rev],
           },
           {
-            name: 'D',
+            name: '4',
             on: ['E', 'F'],
             train_limit: 2, # per type
             tiles: %i[yellow green brown gray],
@@ -182,7 +182,7 @@ module Engine
             status: %w[two_per third_rev],
           },
           {
-            name: 'E',
+            name: '5',
             on: ['G', 'H'],
             train_limit: 2, # per type
             tiles: %i[yellow green brown gray blue],
@@ -199,6 +199,7 @@ module Engine
               price: 100,
               num: 40,
               no_local: true,
+              available_on: '1',
               rusts_on: ['C⇧', 'C⇩', 'D⇧'],
               variants: [
                 {
@@ -224,6 +225,7 @@ module Engine
               price: 150,
               num: 40,
               no_local: true,
+              available_on: '1',
               rusts_on: ['D⇧', 'E', 'F'],
               variants: [
                 {
@@ -246,7 +248,8 @@ module Engine
               name: 'B⇩',
               distance: 99,
               price: 150,
-              rusts_on: ['D⇧', 'E', 'F'],
+              available_on: '2',
+              rusts_on: ['D⇧', 'E'],
               num: 12,
               variants: [
                 {
@@ -269,7 +272,8 @@ module Engine
               name: 'C⇧',
               distance: 99,
               price: 350,
-              rusts_on: ['F', 'G','H'],
+              available_on: '2',
+              rusts_on: ['F⇧', 'F⇩','G','H'],
               num: 12,
               variants: [
                 {
@@ -292,6 +296,7 @@ module Engine
               name: 'C⇩',
               distance: 99,
               price: 350,
+              available_on: '3',
               rusts_on: ['F', 'G','H'],
               num: 12,
               variants: [
@@ -315,6 +320,7 @@ module Engine
               name: 'D⇧',
               distance: 99,
               price: 500,
+              available_on: '3',
               rusts_on: 'H',
               num: 12,
               variants: [
@@ -335,10 +341,11 @@ module Engine
               ],
             },
             {
-              name: 'E',
+              name: 'E⇧',
               distance: 99,
               num: 6,
               price: 700,
+              available_on: '4',
               variants: [
                 {
                   name: '∞F:30',
@@ -357,10 +364,57 @@ module Engine
               ],
             },
             {
-              name: 'F',
+              name: 'F⇧',
               distance: 99,
               price: 1000,
               num: 6,
+              available_on: '4',
+              variants: [
+                {
+                  name: '∞F:40',
+                  distance: 99,
+                },
+                {
+                  name: '(R)',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 7, 'visit' => 7 },
+                             { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
+                },
+                {
+                  name: '4XX+2X',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 6, 'visit' => 99 },
+                             { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
+                },
+              ],
+            },
+            {
+              name: 'E⇩',
+              distance: 99,
+              num: 99,
+              price: 700,
+              available_on: '5',
+              variants: [
+                {
+                  name: '∞F:30',
+                  distance: 99,
+                },
+                {
+                  name: '7R',
+                  distance: [{ 'nodes' => %w[city], 'pay' => 7, 'visit' => 7 },
+                             { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
+                },
+                {
+                  name: '3XX+2X',
+                  distance: [{ 'nodes' => %w[city offboard], 'pay' => 5, 'visit' => 5 },
+                             { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
+                },
+              ],
+            },
+            {
+              name: 'F⇩',
+              distance: 99,
+              price: 1000,
+              num: 99,
+              available_on: '5',
               variants: [
                 {
                   name: '∞F:40',
@@ -383,6 +437,7 @@ module Engine
               distance: 99,
               price: 1500,
               num: 99,
+              available_on: '5',
               variants: [
                 {
                   name: '∞F:60',
@@ -406,6 +461,7 @@ module Engine
               distance: 99,
               price: 2000,
               num: 99,
+              available_on: '5',
               variants: [
                 {
                   name: '(F)',
@@ -523,14 +579,11 @@ module Engine
         PORT_FREIGHT_BONUS = 30
 
         REAL_PHASE_TO_REV_PHASE = {
-          'A' => :green,
-          'B' => :green,
-          'C' => :green,
-          'D' => :brown,
-          'E' => :gray,
-          'F' => :gray,
-          'G' => :blue,
-          'H' => :blue,
+          '1' => :green,
+          '2' => :green,
+          '3' => :brown,
+          '4' => :gray,
+          '5' => :blue,
         }.freeze
 
         NORM_TOKENS = 7
@@ -614,9 +667,9 @@ module Engine
 
           # record what phases corp become available
           @starting_phase = {}
-          @offer_order.each { |c| @starting_phase[c] = 'A' }
-          @offer_order.reverse.take(8).each { |c| @starting_phase[c] = 'B' }
-          @offer_order.reverse.take(4).each { |c| @starting_phase[c] = 'C' }
+          @offer_order.each { |c| @starting_phase[c] = '1' }
+          @offer_order.reverse.take(8).each { |c| @starting_phase[c] = '2' }
+          @offer_order.reverse.take(4).each { |c| @starting_phase[c] = '3' }
 
           @corporations.each { |c| convert_to_full!(c) }
         end
