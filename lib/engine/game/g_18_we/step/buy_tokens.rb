@@ -7,7 +7,7 @@ module Engine
     module G18WE
       module Step
         class BuyTokens < Engine::Step::Base
-          UNCHARTERED_TOKEN_COST = 40
+          UNCHARTERED_TOKEN_COST = 20
 
           def actions(entity)
             return [] unless @round.buy_tokens&.owner == entity
@@ -48,7 +48,7 @@ module Engine
           end
 
           def choices
-            Array.new(6) do |i|
+            Array.new(15) do |i|
               next unless (i + 2) * UNCHARTERED_TOKEN_COST <= @round.buy_tokens.cash
 
               [i + 2, "#{i + 2} (#{@game.format_currency((i + 2) * UNCHARTERED_TOKEN_COST)})"]

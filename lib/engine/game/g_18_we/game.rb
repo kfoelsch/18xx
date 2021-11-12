@@ -152,63 +152,39 @@ module Engine
         PHASES = [
           {
             name: 'A',
-            train_limit: 3, # per type
+            train_limit: 2, # per type
             tiles: %i[yellow green],
             operating_rounds: 1,
             status: %w[two_per first_rev],
           },
           {
             name: 'B',
-            on: 'B',
-            train_limit: 3, # 3 type
+            on: ['B⇩', 'C⇧' ],
+            train_limit: 2, # 2 type
             tiles: %i[yellow green],
             operating_rounds: 1,
             status: %w[two_per first_rev],
           },
           {
             name: 'C',
-            on: 'C',
-            train_limit: 3, # per type
-            tiles: %i[yellow green],
-            operating_rounds: 2,
-            status: %w[two_per first_rev],
-          },
-          {
-            name: 'D',
-            on: 'D',
-            train_limit: 3, # per type
+            on: ['C⇩', 'D⇧'],
+            train_limit: 2, # per type
             tiles: %i[yellow green brown],
-            operating_rounds: 3,
+            operating_rounds: 2,
             status: %w[two_per second_rev],
           },
           {
+            name: 'D',
+            on: ['E', 'F'],
+            train_limit: 2, # per type
+            tiles: %i[yellow green brown gray],
+            operating_rounds: 2,
+            status: %w[two_per third_rev],
+          },
+          {
             name: 'E',
-            on: 'E',
+            on: ['G', 'H'],
             train_limit: 2, # per type
-            tiles: %i[yellow green brown gray],
-            operating_rounds: 3,
-            status: %w[two_per third_rev],
-          },
-          {
-            name: 'F',
-            on: 'F',
-            train_limit: 2, # per type
-            tiles: %i[yellow green brown gray],
-            operating_rounds: 3,
-            status: %w[two_per third_rev],
-          },
-          {
-            name: 'G',
-            on: 'G',
-            train_limit: 3, # across all types
-            tiles: %i[yellow green brown gray blue],
-            operating_rounds: 3,
-            status: %w[two_per last_rev],
-          },
-          {
-            name: 'H',
-            on: 'H',
-            train_limit: 3, # across all types
             tiles: %i[yellow green brown gray blue],
             operating_rounds: 3,
             status: %w[two_per last_rev],
@@ -218,180 +194,192 @@ module Engine
         def game_trains
           [
             {
-              name: 'A⇩ / B⇧',
+              name: 'A⇩',
               distance: 99,
               price: 100,
-              rusts_on: 'C',
               num: 40,
               no_local: true,
+              rusts_on: ['C⇧', 'C⇩', 'D⇧'],
               variants: [
                 {
                   name: '2F:10**',
                   distance: 2,
-                  price: 100,
                   no_local: true,
                 },
                 {
                   name: '2R**',
                   distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 2 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 100,
                 },
                 {
                   name: '2/3E**',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 2, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 100,
                 },
+              ],
+            },
+            {
+              name: 'B⇧',
+              distance: 99,
+              price: 150,
+              num: 40,
+              no_local: true,
+              rusts_on: ['D⇧', 'E', 'F'],
+              variants: [
                 {
                   name: '5F:10*',
                   distance: 5,
-                  price: 150,
                 },
                 {
                   name: '2/3R*',
                   distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 150,
                 },
                 {
                   name: '3E*',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 150,
                 },
               ],
             },
             {
-              name: 'B⇩ / C⇧',
+              name: 'B⇩',
               distance: 99,
               price: 150,
-              rusts_on: 'E',
+              rusts_on: ['D⇧', 'E', 'F'],
               num: 12,
               variants: [
                 {
                   name: '5F:10**',
                   distance: 5,
-                  price: 150,
                 },
                 {
                   name: '2/3R**',
                   distance: [{ 'nodes' => %w[city], 'pay' => 2, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 150,
                 },
                 {
                   name: '3E**',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 150,
                 },
+              ],
+            },
+            {
+              name: 'C⇧',
+              distance: 99,
+              price: 350,
+              rusts_on: ['F', 'G','H'],
+              num: 12,
+              variants: [
                 {
                   name: '10F:20*',
                   distance: 10,
-                  price: 350,
                 },
                 {
                   name: '4R*',
                   distance: [{ 'nodes' => %w[city], 'pay' => 4, 'visit' => 4 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 350,
                 },
                 {
                   name: '1XX+2X*',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 350,
                 },
               ],
             },
             {
-              name: 'C⇩ / D⇧',
+              name: 'C⇩',
               distance: 99,
               price: 350,
-              rusts_on: 'F',
+              rusts_on: ['F', 'G','H'],
               num: 12,
               variants: [
                 {
                   name: '10F:20**',
                   distance: 10,
-                  price: 350,
                 },
                 {
                   name: '4R**',
                   distance: [{ 'nodes' => %w[city], 'pay' => 4, 'visit' => 4 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 350,
                 },
                 {
                   name: '1XX+2X**',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 3, 'visit' => 3 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 350,
                 },
+              ],
+            },
+            {
+              name: 'D⇧',
+              distance: 99,
+              price: 500,
+              rusts_on: 'H',
+              num: 12,
+              variants: [
                 {
                   name: '∞F:20*',
                   distance: 99,
-                  price: 500,
                 },
                 {
                   name: '6R*',
                   distance: [{ 'nodes' => %w[city], 'pay' => 6, 'visit' => 6 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 500,
                 },
                 {
                   name: '2XX+2X*',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 4, 'visit' => 4 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 500,
                 },
               ],
             },
             {
-              name: 'E / F',
+              name: 'E',
               distance: 99,
-              price: 700,
               num: 6,
+              price: 700,
               variants: [
                 {
                   name: '∞F:30',
                   distance: 99,
-                  price: 700,
                 },
                 {
                   name: '7R',
                   distance: [{ 'nodes' => %w[city], 'pay' => 7, 'visit' => 7 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 700,
                 },
                 {
                   name: '3XX+2X',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 5, 'visit' => 5 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 700,
                 },
+              ],
+            },
+            {
+              name: 'F',
+              distance: 99,
+              price: 1000,
+              num: 6,
+              variants: [
                 {
                   name: '∞F:40',
                   distance: 99,
-                  price: 1000,
                 },
                 {
                   name: '(R)',
                   distance: [{ 'nodes' => %w[city], 'pay' => 7, 'visit' => 7 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 1000,
                 },
                 {
                   name: '4XX+2X',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 6, 'visit' => 99 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 1000,
                 },
               ],
             },
             {
-              name: 'G / H',
+              name: 'G',
               distance: 99,
               price: 1500,
               num: 99,
@@ -399,22 +387,28 @@ module Engine
                 {
                   name: '∞F:60',
                   distance: 99,
-                  price: 1500,
                 },
                 {
                   name: '(7R)*1.5',
                   distance: [{ 'nodes' => %w[city], 'pay' => 7, 'visit' => 7 },
                              { 'nodes' => ['town'], 'pay' => 99, 'visit' => 99 }],
-                  price: 1500,
                 },
                 {
                   name: '6XX+2X',
                   distance: [{ 'nodes' => %w[city offboard], 'pay' => 8, 'visit' => 99 },
                              { 'nodes' => ['town'], 'pay' => 0, 'visit' => 99 }],
-                  price: 1500,
                 },
+              ],
+              events: [{ 'type' => 'lner_trigger' }],
+            },
+            {
+              name: 'H',
+              distance: 99,
+              price: 2000,
+              num: 99,
+              variants: [
                 {
-                  name: '∞F:40',
+                  name: '(F)',
                   distance: 6,
                   price: 2000,
                 },

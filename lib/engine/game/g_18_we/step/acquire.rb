@@ -6,7 +6,7 @@ module Engine
   module Game
     module G18WE
       module Step
-        class Acquire < G1862::Step::Merge
+        class Acquire < G18WE::Step::Merge
           def merge_name
             'Acquire'
           end
