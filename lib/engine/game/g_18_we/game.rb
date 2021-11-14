@@ -198,14 +198,14 @@ module Engine
               distance: 99,
               price: 100,
               num: 40,
-              no_local: true,
+              no_regional: true,
               available_on: '1',
               rusts_on: ['C⇧', 'C⇩', 'D⇧'],
               variants: [
                 {
                   name: '2F:10**',
                   distance: 2,
-                  no_local: true,
+                  no_regional: true,
                 },
                 {
                   name: '2R**',
@@ -224,7 +224,7 @@ module Engine
               distance: 99,
               price: 150,
               num: 40,
-              no_local: true,
+              no_regional: true,
               available_on: '1',
               rusts_on: ['D⇧', 'E', 'F'],
               variants: [
@@ -563,7 +563,6 @@ module Engine
         UNCHARTERED_TOKEN_COST = 20
 
         LONDON_TOKEN_HEXES = %w[
-            F5
             E6
         ].freeze
 
@@ -586,11 +585,10 @@ module Engine
           '5' => :blue,
         }.freeze
 
-        NORM_TOKENS = 7
-        OPTIONAL_TOKENS = 8
+        NORM_TOKENS = 16
 
         def max_tokens
-          @max_tokens ||= @optional_rules&.include?(:eight_tokens) ? OPTIONAL_TOKENS : NORM_TOKENS
+          @max_tokens = NORM_TOKENS
         end
 
         def init_share_pool
@@ -636,11 +634,11 @@ module Engine
           @offer_order = @corporations.sort_by { rand }
           num_removed = case @players.size
                         when 8
-                          2
-                        when 7
-                          3
-                        else
                           4
+                        when 7
+                          5
+                        else
+                          6
                         end
           removed = @offer_order.take(num_removed)
           removed.each do |corp|
@@ -657,7 +655,7 @@ module Engine
           @chartered = {}
 
           # randomize and distribute train permits
-          permit_list = 6.times.flat_map { %i[freight express local] }
+          permit_list = 6.times.flat_map { %i[freight express regional] }
           permit_list.pop(2) if @players.size < 7
           permit_list.sort_by! { rand }
           @permits = Hash.new { |h, k| h[k] = [] }
@@ -668,8 +666,8 @@ module Engine
           # record what phases corp become available
           @starting_phase = {}
           @offer_order.each { |c| @starting_phase[c] = '1' }
-          @offer_order.reverse.take(8).each { |c| @starting_phase[c] = '2' }
-          @offer_order.reverse.take(4).each { |c| @starting_phase[c] = '3' }
+          @offer_order.reverse.take(6).each { |c| @starting_phase[c] = '2' }
+          @offer_order.reverse.take(3).each { |c| @starting_phase[c] = '3' }
 
           @corporations.each { |c| convert_to_full!(c) }
         end
@@ -1302,7 +1300,7 @@ module Engine
           when /F\**$/
             :freight
           when /L\**$/
-            :local
+            :regional
           when /E\**$/
             :express
           end
@@ -1392,7 +1390,7 @@ module Engine
           if train_type(route.train) == :freight
             [freight_revenue_stops(route, visits)]
           else
-            # OK, since local trains won't have offboards
+            # OK, since regional trains won't have offboards
             all_stops = visits.select { |n| n.city? || n.offboard? }
             stop_options = []
             length = [all_stops.size, route.train.distance[0]['pay']].min
@@ -1445,7 +1443,7 @@ module Engine
           @global_stops[route.routes.index(route)]
         end
 
-        def compute_local_stops(route, visits)
+        def compute_regional_stops(route, visits)
           if mn_train?(route.train)
             towns = visits.select(&:town?)
             optimize_stops(route) + towns
@@ -1467,8 +1465,8 @@ module Engine
           @global_stops = nil
           visits = route.visited_stops
           case train_type(route.train)
-          when :local
-            compute_local_stops(route, visits)
+          when :regional
+            compute_regional_stops(route, visits)
           when :express
             compute_express_stops(route, visits)
           else
@@ -1637,7 +1635,7 @@ module Engine
 
         def route_distance(route)
           case train_type(route.train)
-          when :local
+          when :regional
             "#{route.visited_stops.count(&:city?)}+#{route.visited_stops.count(&:town?)}"
           when :express
             route.visited_stops.count { |n| n.city? || n.offboard? }
@@ -1667,7 +1665,7 @@ module Engine
         def check_distance(route, visits)
           raise GameError, 'Route cannot begin/end in a town' if visits.first.town? || visits.last.town?
           # could let super handle this, but this is a better error message
-          raise GameError, 'Local train cannot visit an offboard' if train_type(route.train) == :local && visits.any?(&:offboard?)
+          raise GameError, 'regional train cannot visit an offboard' if train_type(route.train) == :regional && visits.any?(&:offboard?)
           if (visits.first.tile.color == :red && visits.last.tile.color == :red) ||
             (visits.first.tile.color == :blue && visits.last.tile.color == :blue)
             raise GameError, 'Route cannot visit two red offboards or two ports'
@@ -1774,7 +1772,7 @@ module Engine
         def hex_on_other_route?(this_route, hex)
           this_route.routes.each do |r|
             return false if r == this_route
-            next unless train_type(r.train) == :local
+            next unless train_type(r.train) == :regional
 
             return true if r.all_hexes.include?(hex)
           end
@@ -1782,7 +1780,7 @@ module Engine
         end
 
         def subsidy_for(route, _stops)
-          return 0 unless train_type(route.train) == :local
+          return 0 unless train_type(route.train) == :regional
 
           route.all_hexes.count { |h| !hex_on_other_route?(route, h) } * 10
         end
@@ -2453,7 +2451,7 @@ module Engine
 
           color = available_to_start?(corporation) ? 'white' : 'black'
           shape = case @permits[corporation]&.first
-                  when :local
+                  when :regional
                     :diamond
                   when :express
                     :circle

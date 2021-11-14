@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>KNFB</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(299.000000, 306.000000) rotate(90.000000) translate(-299.000000, -306.000000) translate(-3.000000, 7.000000)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="304.926411" cy="299" r="281.06"></circle>
+            <path d="M530.372411,156.078 L530.372411,443.118 L79.4804106,443.118 L79.4804106,156.078 L530.372411,156.078 Z" id="Rectangle" stroke="#777A7C" stroke-width="1.196" fill="#777A7C"></path>
+            <path d="M530.970411,250.562 C637.621683,250.562 725.264881,338.231905 735.288448,348.634 L735.288448,348.634 L326.652373,348.634 C336.67594,338.231905 424.319138,250.562 530.970411,250.562 Z" id="Oval" stroke="#777A7C" stroke-width="1.196" fill="#777A7C" transform="translate(530.970411, 299.598000) rotate(90.000000) translate(-530.970411, -299.598000) "></path>
+            <path d="M74.0984106,250.562 C180.749683,250.562 268.392881,338.231905 278.416448,348.634 L278.416448,348.634 L-130.219627,348.634 C-120.19606,338.231905 -32.5528623,250.562 74.0984106,250.562 Z" id="Oval" stroke="#777A7C" stroke-width="1.196" fill="#777A7C" transform="translate(74.098411, 299.598000) rotate(-90.000000) translate(-74.098411, -299.598000) "></path>
+            <path d="M302.534411,477.802 C411.655418,477.802 501.332909,565.448547 511.613957,575.874 L511.613957,575.874 L93.4548637,575.874 C103.735912,565.448547 193.413403,477.802 302.534411,477.802 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C" transform="translate(302.534411, 526.838000) rotate(180.000000) translate(-302.534411, -526.838000) "></path>
+            <path d="M303.730411,23.322 C412.851418,23.322 502.528909,110.968547 512.809957,121.394 L512.809957,121.394 L94.6508637,121.394 C104.931912,110.968547 194.609403,23.322 303.730411,23.322 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C"></path>
+            <line x1="88.4504106" y1="138.736" x2="521.402411" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="88.4504106" y1="460.46" x2="521.402411" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="K" transform="translate(102.000000, 299.407081) rotate(-90.000000) translate(-102.000000, -299.407081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#FFFFFF">
+                <tspan x="28" y="362.407081">K</tspan>
+            </text>
+            <text id="N" transform="translate(237.000000, 294.407081) rotate(-90.000000) translate(-237.000000, -294.407081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#FFFFFF">
+                <tspan x="161" y="357.407081">N</tspan>
+            </text>
+            <text id="F" transform="translate(370.000000, 306.907081) rotate(-90.000000) translate(-370.000000, -306.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#FFFFFF">
+                <tspan x="309.5" y="369.907081">F</tspan>
+            </text>
+            <text id="B" transform="translate(502.000000, 301.907081) rotate(-90.000000) translate(-502.000000, -301.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#FFFFFF">
+                <tspan x="433.5" y="364.907081">B</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

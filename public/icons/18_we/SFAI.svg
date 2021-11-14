@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SFAI</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(925.849855, 301.849855) rotate(-45.000000) translate(-925.849855, -301.849855) translate(626.849855, 2.849855)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="299" cy="299" r="281.06"></circle>
+            <path d="M68.172,250.562 C174.823273,250.562 262.46647,338.231905 272.490037,348.634 L272.490037,348.634 L-136.146037,348.634 C-126.12247,338.231905 -38.4792728,250.562 68.172,250.562 Z" id="Oval" stroke="#F4EF77" stroke-width="1.196" fill="#F4EF77" transform="translate(68.172000, 299.598000) rotate(-90.000000) translate(-68.172000, -299.598000) "></path>
+            <path d="M297.096893,22.6148932 C406.217901,22.6148932 495.895392,110.26144 506.17644,120.686893 L506.17644,120.686893 L88.0173463,120.686893 C98.2983946,110.26144 187.975886,22.6148932 297.096893,22.6148932 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+        </g>
+        <g id="Group" transform="translate(300.000000, 296.000000) rotate(90.000000) translate(-300.000000, -296.000000) translate(-4.000000, -3.000000)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="307.926411" cy="299" r="281.06"></circle>
+            <path d="M533.372411,156.078 L533.372411,443.118 L82.4804106,443.118 L82.4804106,156.078 L533.372411,156.078 Z" id="Rectangle" stroke="#DFB71B" stroke-width="1.196" fill="#DFB71B"></path>
+            <path d="M533.970411,250.562 C640.621683,250.562 728.264881,338.231905 738.288448,348.634 L738.288448,348.634 L329.652373,348.634 C339.67594,338.231905 427.319138,250.562 533.970411,250.562 Z" id="Oval" stroke="#DFB71B" stroke-width="1.196" fill="#DFB71B" transform="translate(533.970411, 299.598000) rotate(90.000000) translate(-533.970411, -299.598000) "></path>
+            <path d="M77.0984106,250.562 C183.749683,250.562 271.392881,338.231905 281.416448,348.634 L281.416448,348.634 L-127.219627,348.634 C-117.19606,338.231905 -29.5528623,250.562 77.0984106,250.562 Z" id="Oval" stroke="#DFB71B" stroke-width="1.196" fill="#DFB71B" transform="translate(77.098411, 299.598000) rotate(-90.000000) translate(-77.098411, -299.598000) "></path>
+            <path d="M305.534411,477.802 C414.655418,477.802 504.332909,565.448547 514.613957,575.874 L514.613957,575.874 L96.4548637,575.874 C106.735912,565.448547 196.413403,477.802 305.534411,477.802 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C" transform="translate(305.534411, 526.838000) rotate(180.000000) translate(-305.534411, -526.838000) "></path>
+            <path d="M306.730411,23.322 C415.851418,23.322 505.528909,110.968547 515.809957,121.394 L515.809957,121.394 L97.6508637,121.394 C107.931912,110.968547 197.609403,23.322 306.730411,23.322 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C"></path>
+            <line x1="91.4504106" y1="138.736" x2="524.402411" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="91.4504106" y1="460.46" x2="524.402411" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="S" transform="translate(102.000000, 307.907081) rotate(-90.000000) translate(-102.000000, -307.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="43.5" y="370.907081">S</tspan>
+            </text>
+            <text id="F" transform="translate(238.000000, 309.907081) rotate(-90.000000) translate(-238.000000, -309.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="177.5" y="372.907081">F</tspan>
+            </text>
+            <text id="A" transform="translate(372.000000, 309.907081) rotate(-90.000000) translate(-372.000000, -309.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="303.5" y="372.907081">A</tspan>
+            </text>
+            <text id="I" transform="translate(506.000000, 309.907081) rotate(-90.000000) translate(-506.000000, -309.907081) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="465.5" y="372.907081">I</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="598px" height="601px" viewBox="0 0 598 601" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>LV</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(299.000000, 301.000000) rotate(90.000000) translate(-299.000000, -301.000000) translate(-1.000000, 1.000000)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="300" cy="300" r="282.06"></circle>
+            <path d="M526.202,156.598 L526.202,444.602 L73.798,444.602 L73.798,156.598 L526.202,156.598 Z" id="Rectangle" stroke="#321B06" stroke-width="1.196" fill="#321B06"></path>
+            <path d="M526.8,251.398 C633.820218,251.398 721.764596,339.380615 731.806078,349.802 L731.806078,349.802 L321.793922,349.802 C331.835404,339.380615 419.779782,251.398 526.8,251.398 Z" id="Oval" stroke="#321B06" stroke-width="1.196" fill="#321B06" transform="translate(526.800000, 300.600000) rotate(90.000000) translate(-526.800000, -300.600000) "></path>
+            <path d="M68.4,251.398 C175.420218,251.398 263.364596,339.380615 273.406078,349.802 L273.406078,349.802 L-136.606078,349.802 C-126.564596,339.380615 -38.6202184,251.398 68.4,251.398 Z" id="Oval" stroke="#321B06" stroke-width="1.196" fill="#321B06" transform="translate(68.400000, 300.600000) rotate(-90.000000) translate(-68.400000, -300.600000) "></path>
+            <path d="M297.6,479.398 C407.098506,479.398 497.084164,567.357209 507.383589,577.802 L507.383589,577.802 L87.8164106,577.802 C98.1158362,567.357209 188.101494,479.398 297.6,479.398 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C" transform="translate(297.600000, 528.600000) rotate(180.000000) translate(-297.600000, -528.600000) "></path>
+            <path d="M298.8,23.398 C408.298506,23.398 498.284164,111.357209 508.583589,121.802 L508.583589,121.802 L89.0164106,121.802 C99.3158362,111.357209 189.301494,23.398 298.8,23.398 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C"></path>
+            <line x1="82.8" y1="139.2" x2="517.2" y2="139.2" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="82.8" y1="462" x2="517.2" y2="462" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="L" transform="translate(159.605608, 300.408443) rotate(-90.000000) translate(-159.605608, -300.408443) " font-family="Georgia-Bold, Georgia" font-size="280" font-weight="bold" fill="#FFFFFF">
+                <tspan x="63.2845379" y="398.408443">L</tspan>
+            </text>
+            <text id="V" transform="translate(428.501929, 300.408443) rotate(-90.000000) translate(-428.501929, -300.408443) " font-family="Georgia-Bold, Georgia" font-size="280" font-weight="bold" fill="#FFFFFF">
+                <tspan x="321.14407" y="398.408443">V</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
