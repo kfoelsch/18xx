@@ -210,8 +210,8 @@ module Engine
           {
             sym: 'KSS',
             name: 'Königlich Sächsische Staatseisenbahnen',
-            logo: '18_we/KSS',
-            simple_logo: '18_we/KSS.alt',
+            logo: '18_we/ECR',
+            simple_logo: '18_we/KSS',
             float_percent: 50,
             shares: [30, 10, 10, 10, 10, 10, 10, 10],
             max_ownership_percent: 100,
