@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BHB</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(302.137822, 302.137822) rotate(45.000000) translate(-302.137822, -302.137822) translate(-11.817589, 3.137822)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="310.932074" cy="299" r="281.06"></circle>
+            <rect id="Rectangle" stroke="#0D385F" stroke-width="1.196" fill="#0D385F" x="85.486074" y="156.078" width="450.892" height="287.04"></rect>
+            <text id="H" transform="translate(311.126984, 292.336013) rotate(-45.000000) translate(-311.126984, -292.336013) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="219.626984" y="361.836013">H</tspan>
+            </text>
+            <path d="M536.976074,250.562 C643.627347,250.562 731.270544,338.231905 741.294111,348.634 L741.294111,348.634 L332.658037,348.634 C342.681604,338.231905 430.324801,250.562 536.976074,250.562 Z" id="Oval" stroke="#0D385F" stroke-width="1.196" fill="#0D385F" transform="translate(536.976074, 299.598000) rotate(90.000000) translate(-536.976074, -299.598000) "></path>
+            <path d="M80.104074,250.562 C186.755347,250.562 274.398544,338.231905 284.422111,348.634 L284.422111,348.634 L-124.213963,348.634 C-114.190396,338.231905 -26.5471989,250.562 80.104074,250.562 Z" id="Oval" stroke="#0D385F" stroke-width="1.196" fill="#0D385F" transform="translate(80.104074, 299.598000) rotate(-90.000000) translate(-80.104074, -299.598000) "></path>
+            <path d="M308.540074,477.802 C417.661082,477.802 507.338573,565.448547 517.619621,575.874 L517.619621,575.874 L99.460527,575.874 C109.741575,565.448547 199.419066,477.802 308.540074,477.802 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138" transform="translate(308.540074, 526.838000) rotate(180.000000) translate(-308.540074, -526.838000) "></path>
+            <path d="M309.736074,23.322 C418.857082,23.322 508.534573,110.968547 518.815621,121.394 L518.815621,121.394 L100.656527,121.394 C110.937575,110.968547 200.615066,23.322 309.736074,23.322 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+            <line x1="94.456074" y1="138.736" x2="527.408074" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="94.456074" y1="460.46" x2="527.408074" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="B" transform="translate(133.996735, 325.216479) rotate(-45.000000) translate(-133.996735, -325.216479) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="57.996735" y="394.716479">B</tspan>
+            </text>
+            <text id="B" transform="translate(493.914087, 272.183470) rotate(-45.000000) translate(-493.914087, -272.183470) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="417.914087" y="341.68347">B</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

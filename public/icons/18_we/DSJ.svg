@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DSJ</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1031.137822, 309.137822) rotate(45.000000) translate(-1031.137822, -309.137822) translate(717.182411, 10.137822)"></g>
+        <g id="Group" transform="translate(299.781375, 298.781375) rotate(45.000000) translate(-299.781375, -298.781375) translate(0.472192, -0.218625)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="299.618365" cy="299" r="281.06"></circle>
+            <rect id="Rectangle" stroke="#AC2075" stroke-width="1.196" fill="#AC2075" x="74.1723655" y="156.078" width="450.892" height="287.04"></rect>
+            <text id="S" transform="translate(314.308964, 299.053528) rotate(-45.000000) translate(-314.308964, -299.053528) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#000000">
+                <tspan x="249.308964" y="368.553528">S</tspan>
+            </text>
+            <path d="M525.662365,250.562 C632.313638,250.562 719.956836,338.231905 729.980403,348.634 L729.980403,348.634 L321.344328,348.634 C331.367895,338.231905 419.011093,250.562 525.662365,250.562 Z" id="Oval" stroke="#AC2075" stroke-width="1.196" fill="#AC2075" transform="translate(525.662365, 299.598000) rotate(90.000000) translate(-525.662365, -299.598000) "></path>
+            <path d="M68.7903655,250.562 C175.441638,250.562 263.084836,338.231905 273.108403,348.634 L273.108403,348.634 L-135.527672,348.634 C-125.504105,338.231905 -37.8609074,250.562 68.7903655,250.562 Z" id="Oval" stroke="#AC2075" stroke-width="1.196" fill="#AC2075" transform="translate(68.790365, 299.598000) rotate(-90.000000) translate(-68.790365, -299.598000) "></path>
+            <path d="M297.226365,477.802 C406.347373,477.802 496.024864,565.448547 506.305912,575.874 L506.305912,575.874 L88.1468185,575.874 C98.4278669,565.448547 188.105358,477.802 297.226365,477.802 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138" transform="translate(297.226365, 526.838000) rotate(180.000000) translate(-297.226365, -526.838000) "></path>
+            <path d="M298.422365,23.322 C407.543373,23.322 497.220864,110.968547 507.501912,121.394 L507.501912,121.394 L89.3428185,121.394 C99.6238669,110.968547 189.301358,23.322 298.422365,23.322 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+            <line x1="83.1423655" y1="138.736" x2="516.094365" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="83.1423655" y1="460.46" x2="516.094365" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="D" transform="translate(139.300036, 317.084751) rotate(-45.000000) translate(-139.300036, -317.084751) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#000000">
+                <tspan x="55.8000359" y="386.584751">D</tspan>
+            </text>
+            <text id="J" transform="translate(471.286670, 283.497179) rotate(-45.000000) translate(-471.286670, -283.497179) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#000000">
+                <tspan x="411.28667" y="352.997179">J</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(-361.112178, 298.887822) rotate(45.000000) translate(361.112178, -298.887822) translate(-670.471395, -0.112178)" fill="#B24AD3" stroke="#000000" stroke-width="35.88">
+            <circle id="Oval" cx="312.346288" cy="299" r="281.06"></circle>
+        </g>
+    </g>
+</svg>

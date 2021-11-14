@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rhe</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(301.637822, 300.637822) rotate(45.000000) translate(-301.637822, -300.637822) translate(-5.953628, 1.637822)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="305.27522" cy="299" r="281.06"></circle>
+            <rect id="Rectangle" stroke="#7F49BE" stroke-width="1.196" fill="#7F49BE" x="79.8292197" y="156.078" width="450.892" height="287.04"></rect>
+            <text id="h" transform="translate(336.582828, 285.972052) rotate(-45.000000) translate(-336.582828, -285.972052) " font-family="Georgia-Bold, Georgia" font-size="220.2" font-weight="bold" fill="#000000">
+                <tspan x="261.582828" y="362.972052">h</tspan>
+            </text>
+            <path d="M531.31922,250.562 C637.970493,250.562 725.61369,338.231905 735.637257,348.634 L735.637257,348.634 L327.001182,348.634 C337.024749,338.231905 424.667947,250.562 531.31922,250.562 Z" id="Oval" stroke="#7F49BE" stroke-width="1.196" fill="#7F49BE" transform="translate(531.319220, 299.598000) rotate(90.000000) translate(-531.319220, -299.598000) "></path>
+            <path d="M74.4472197,250.562 C181.098493,250.562 268.74169,338.231905 278.765257,348.634 L278.765257,348.634 L-129.870818,348.634 C-119.847251,338.231905 -32.2040531,250.562 74.4472197,250.562 Z" id="Oval" stroke="#7F49BE" stroke-width="1.196" fill="#7F49BE" transform="translate(74.447220, 299.598000) rotate(-90.000000) translate(-74.447220, -299.598000) "></path>
+            <path d="M302.88322,477.802 C412.004227,477.802 501.681718,565.448547 511.962767,575.874 L511.962767,575.874 L93.8036728,575.874 C104.084721,565.448547 193.762212,477.802 302.88322,477.802 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138" transform="translate(302.883220, 526.838000) rotate(180.000000) translate(-302.883220, -526.838000) "></path>
+            <path d="M304.07922,23.322 C413.200227,23.322 502.877718,110.968547 513.158767,121.394 L513.158767,121.394 L94.9996728,121.394 C105.280721,110.968547 194.958212,23.322 304.07922,23.322 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+            <line x1="88.7992197" y1="138.736" x2="521.75122" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="88.7992197" y1="460.46" x2="521.75122" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="R" transform="translate(150.613744, 324.862925) rotate(-45.000000) translate(-150.613744, -324.862925) " font-family="Georgia-Bold, Georgia" font-size="220" font-weight="bold" fill="#000000">
+                <tspan x="62.6137444" y="401.862925">R</tspan>
+            </text>
+            <text id="e" transform="translate(482.246825, 260.516208) rotate(-45.000000) translate(-482.246825, -260.516208) " font-family="Georgia-Bold, Georgia" font-size="220" font-weight="bold" fill="#000000">
+                <tspan x="419.246825" y="337.516208">e</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
