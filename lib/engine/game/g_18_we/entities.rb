@@ -70,8 +70,8 @@ module Engine
           {
             sym: 'BHB',
             name: 'Berlin-Hamburger Bahn',
-            logo: '18_we/EUR',
-            simple_logo: '18_we/EUR.alt',
+            logo: '18_we/BHB',
+            simple_logo: '18_we/BHB.alt',
             float_percent: 50,
             shares: [30, 10, 10, 10, 10, 10, 10, 10],
             max_ownership_percent: 100,
@@ -196,7 +196,7 @@ module Engine
           {
             sym: 'GC',
             name: 'Grand Central',
-            logo: '18WE/GC',
+            logo: '18_we/GC',
             simple_logo: '18WE/GC.alt',
             float_percent: 50,
             shares: [30, 10, 10, 10, 10, 10, 10, 10],
@@ -210,8 +210,8 @@ module Engine
           {
             sym: 'KSS',
             name: 'Königlich Sächsische Staatseisenbahnen',
-            logo: '18_we/ECR',
-            simple_logo: '18_we/KSS',
+            logo: '18_we/KSS',
+            simple_logo: '18_we/KSS.alt',
             float_percent: 50,
             shares: [30, 10, 10, 10, 10, 10, 10, 10],
             max_ownership_percent: 100,
@@ -238,7 +238,7 @@ module Engine
           {
             sym: 'LV',
             name: 'Strada ferrata Ferdinandea Lombardo-Veneta',
-            logo: '18WE/LV',
+            logo: '18_we/LV',
             simple_logo: '18WE/LV.alt',
             float_percent: 50,
             shares: [30, 10, 10, 10, 10, 10, 10, 10],

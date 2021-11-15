@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MAV</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(300.000000, 299.926411) rotate(90.000000) translate(-300.000000, -299.926411) translate(1.000000, 0.926411)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="299" cy="299" r="281.06"></circle>
+            <path d="M524.446,156.078 L524.446,443.118 L73.554,443.118 L73.554,156.078 L524.446,156.078 Z" id="Rectangle" stroke="#800923" stroke-width="1.196" fill="#800923"></path>
+            <path d="M525.044,250.562 C631.695273,250.562 719.33847,338.231905 729.362037,348.634 L729.362037,348.634 L320.725963,348.634 C330.74953,338.231905 418.392727,250.562 525.044,250.562 Z" id="Oval" stroke="#800923" stroke-width="1.196" fill="#800923" transform="translate(525.044000, 299.598000) rotate(90.000000) translate(-525.044000, -299.598000) "></path>
+            <path d="M68.172,250.562 C174.823273,250.562 262.46647,338.231905 272.490037,348.634 L272.490037,348.634 L-136.146037,348.634 C-126.12247,338.231905 -38.4792728,250.562 68.172,250.562 Z" id="Oval" stroke="#800923" stroke-width="1.196" fill="#800923" transform="translate(68.172000, 299.598000) rotate(-90.000000) translate(-68.172000, -299.598000) "></path>
+            <path d="M296.608,477.802 C405.729008,477.802 495.406499,565.448547 505.687547,575.874 L505.687547,575.874 L87.5284531,575.874 C97.8095014,565.448547 187.486992,477.802 296.608,477.802 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C" transform="translate(296.608000, 526.838000) rotate(180.000000) translate(-296.608000, -526.838000) "></path>
+            <path d="M297.804,23.322 C406.925008,23.322 496.602499,110.968547 506.883547,121.394 L506.883547,121.394 L88.7244531,121.394 C99.0055014,110.968547 188.682992,23.322 297.804,23.322 Z" id="Oval" stroke="#D5771C" stroke-width="1.196" fill="#D5771C"></path>
+            <line x1="82.524" y1="138.736" x2="515.476" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="82.524" y1="460.46" x2="515.476" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="M" transform="translate(131.573589, 299.907081) rotate(-90.000000) translate(-131.573589, -299.907081) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="29.0735894" y="369.407081">M</tspan>
+            </text>
+            <text id="A" transform="translate(298.573589, 300.407081) rotate(-90.000000) translate(-298.573589, -300.407081) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="222.573589" y="369.907081">A</tspan>
+            </text>
+            <text id="V" transform="translate(475.573589, 300.907081) rotate(-90.000000) translate(-475.573589, -300.907081) " font-family="Georgia-Bold, Georgia" font-size="200" font-weight="bold" fill="#FFFFFF">
+                <tspan x="399.073589" y="370.407081">V</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

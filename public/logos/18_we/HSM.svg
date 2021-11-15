@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>HSM</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(958.781375, 297.781375) rotate(45.000000) translate(-958.781375, -297.781375) translate(659.472192, -1.218625)" fill="#B24AD3" stroke="#000000" stroke-width="35.88">
+            <circle id="Oval" cx="299.618365" cy="299" r="281.06"></circle>
+        </g>
+        <g id="Group" transform="translate(297.887822, 297.887822) rotate(45.000000) translate(-297.887822, -297.887822) translate(-11.471395, -1.112178)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="312.346288" cy="299" r="281.06"></circle>
+            <rect id="Rectangle" stroke="#1D9BB1" stroke-width="1.196" fill="#1D9BB1" x="86.9002875" y="156.078" width="450.892" height="287.04"></rect>
+            <text id="S" transform="translate(300.166829, 296.932207) rotate(-45.000000) translate(-300.166829, -296.932207) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="241.666829" y="359.932207">S</tspan>
+            </text>
+            <path d="M538.390288,250.562 C645.04156,250.562 732.684758,338.231905 742.708325,348.634 L742.708325,348.634 L334.07225,348.634 C344.095817,338.231905 431.739015,250.562 538.390288,250.562 Z" id="Oval" stroke="#1D9BB1" stroke-width="1.196" fill="#1D9BB1" transform="translate(538.390288, 299.598000) rotate(90.000000) translate(-538.390288, -299.598000) "></path>
+            <path d="M81.5182875,250.562 C188.16956,250.562 275.812758,338.231905 285.836325,348.634 L285.836325,348.634 L-122.79975,348.634 C-112.776183,338.231905 -25.1329853,250.562 81.5182875,250.562 Z" id="Oval" stroke="#1D9BB1" stroke-width="1.196" fill="#1D9BB1" transform="translate(81.518288, 299.598000) rotate(-90.000000) translate(-81.518288, -299.598000) "></path>
+            <path d="M309.954288,477.802 C419.075295,477.802 508.752786,565.448547 519.033834,575.874 L519.033834,575.874 L100.874741,575.874 C111.155789,565.448547 200.83328,477.802 309.954288,477.802 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138" transform="translate(309.954288, 526.838000) rotate(180.000000) translate(-309.954288, -526.838000) "></path>
+            <path d="M310.443181,22.6148932 C419.564188,22.6148932 509.241679,110.26144 519.522728,120.686893 L519.522728,120.686893 L101.363634,120.686893 C111.644682,110.26144 201.322173,22.6148932 310.443181,22.6148932 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+            <line x1="95.8702875" y1="138.736" x2="528.822288" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="95.8702875" y1="460.46" x2="528.822288" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <text id="H" transform="translate(130.461201, 305.417489) rotate(-45.000000) translate(-130.461201, -305.417489) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="47.9612011" y="368.417489">H</tspan>
+            </text>
+            <text id="M" transform="translate(481.186165, 298.346421) rotate(-45.000000) translate(-481.186165, -298.346421) " font-family="Georgia-Bold, Georgia" font-size="180" font-weight="bold" fill="#000000">
+                <tspan x="388.686165" y="361.346421">M</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(-418.643553, 277.356447) rotate(45.000000) translate(418.643553, -277.356447) translate(-720.976072, -21.643553)" fill="#B24AD3" stroke="#000000" stroke-width="35.88">
+            <circle id="Oval" cx="299" cy="299" r="281.06"></circle>
+        </g>
+    </g>
+</svg>

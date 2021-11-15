@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(299.849855, 298.849855) rotate(-45.000000) translate(-299.849855, -298.849855) translate(0.849855, -0.150145)">
+            <circle id="Oval" stroke="#000000" stroke-width="35.88" fill="#B24AD3" cx="299" cy="299" r="281.06"></circle>
+            <rect id="Rectangle" stroke="#F4EF77" stroke-width="1.196" fill="#F4EF77" x="73.554" y="156.078" width="450.892" height="287.04"></rect>
+            <text id="B" transform="translate(298.841356, 305.417489) rotate(45.000000) translate(-298.841356, -305.417489) " font-family="Georgia-Bold, Georgia" font-size="239.2" font-weight="bold" fill="#000000">
+                <tspan x="207.841356" y="388.917489">B</tspan>
+            </text>
+            <path d="M525.044,250.562 C631.695273,250.562 719.33847,338.231905 729.362037,348.634 L729.362037,348.634 L320.725963,348.634 C330.74953,338.231905 418.392727,250.562 525.044,250.562 Z" id="Oval" stroke="#F4EF77" stroke-width="1.196" fill="#F4EF77" transform="translate(525.044000, 299.598000) rotate(90.000000) translate(-525.044000, -299.598000) "></path>
+            <path d="M68.172,250.562 C174.823273,250.562 262.46647,338.231905 272.490037,348.634 L272.490037,348.634 L-136.146037,348.634 C-126.12247,338.231905 -38.4792728,250.562 68.172,250.562 Z" id="Oval" stroke="#F4EF77" stroke-width="1.196" fill="#F4EF77" transform="translate(68.172000, 299.598000) rotate(-90.000000) translate(-68.172000, -299.598000) "></path>
+            <path d="M296.608,477.802 C405.729008,477.802 495.406499,565.448547 505.687547,575.874 L505.687547,575.874 L87.5284531,575.874 C97.8095014,565.448547 187.486992,477.802 296.608,477.802 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138" transform="translate(296.608000, 526.838000) rotate(180.000000) translate(-296.608000, -526.838000) "></path>
+            <path d="M297.096893,22.6148932 C406.217901,22.6148932 495.895392,110.26144 506.17644,120.686893 L506.17644,120.686893 L88.0173463,120.686893 C98.2983946,110.26144 187.975886,22.6148932 297.096893,22.6148932 Z" id="Oval" stroke="#2D7138" stroke-width="1.196" fill="#2D7138"></path>
+            <line x1="82.524" y1="138.736" x2="515.476" y2="138.736" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+            <line x1="82.524" y1="460.46" x2="515.476" y2="460.46" id="Line" stroke="#000000" stroke-width="35.88" fill="#000000" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
